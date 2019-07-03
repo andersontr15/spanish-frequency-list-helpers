@@ -5,12 +5,12 @@
 
 #### Functions exposed
 
-##### fuzzyMatch
+#### fuzzyMatch
 
 - Returns the top 100 words for a fuzzy matched query
 - Arguments: Object: { query: String }
 
-##### getTopNWords
+#### getTopNWords
 
 -  Returns the top n words within a range
 -  * return object { index, word, frequency }

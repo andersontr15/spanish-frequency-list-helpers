@@ -1,10 +1,11 @@
 const fs = require('fs');
+const path = require('path');
 
 const SEPARATORS = {
   NEW_LINE: '\n',
 };
 
-const FILE_PATH = '../es.txt';
+const FILE_PATH = path.resolve(__dirname, './es.txt');
 
 const FORMAT = 'utf8';
 
@@ -31,6 +32,9 @@ const getTopNWords = ({ from, to }) =>
     };
   });
 
+/**
+ * Returns the top 100 words for a fuzzy matched query
+ */
 const fuzzyMatch = ({ query }) => {
   let matchedWords = [];
   for (let i = 0; i < words.length; i++) {

@@ -13,5 +13,5 @@
 #### getTopNWords
 
 -  Returns the top n words within a range
--  * return object { index, word, frequency }
+-  Returns object in form of { index, word, frequency }
 - Arguments: Object { from: Number, to: Number }

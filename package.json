@@ -1,0 +1,23 @@
+{
+  "name": "spanish_frequency_list_helpers",
+  "version": "1.0.0",
+  "description": "#### This is a simple module that reads a frequency list of Spanish words (about 500k)",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersontr15/spanish_frequency_list_helpers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersontr15/spanish_frequency_list_helpers/issues"
+  },
+  "homepage": "https://github.com/andersontr15/spanish_frequency_list_helpers#readme"
+}

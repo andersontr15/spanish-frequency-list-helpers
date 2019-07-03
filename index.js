@@ -9,7 +9,7 @@ const FILE_PATH = path.resolve(__dirname, './es.txt');
 
 const FORMAT = 'utf8';
 
-const WORD_MATCH_LIMIT = 500;
+const WORD_MATCH_LIMIT = 100;
 
 const data = fs.readFileSync(FILE_PATH, FORMAT);
 

@@ -15,6 +15,22 @@ const data = fs.readFileSync(FILE_PATH, FORMAT);
 
 const words = data.split(SEPARATORS.NEW_LINE);
 
+
+const getFrequencyOfWord = word => {
+  const targetIndex = words.findIndex(value => {
+    const [w, frequency] = value.split(' ');
+    return w.toLowerCase() === word.toLowerCase()
+  })
+  if(targetIndex > -1) {
+    const [word, frequency] = words[targetIndex].split(' ')
+    return {
+      index: `${targetIndex} of ${words.length} words`,
+      word,
+      frequency: frequency.replace('\r', '')
+    }
+  }
+}
+
 /**
  * Returns the top n words within a range
  * return object { index, word, frequency }
@@ -53,5 +69,6 @@ const fuzzyMatch = ({ query }) => {
 
 module.exports = {
   fuzzyMatch,
+  getFrequencyOfWord,
   getTopNWords,
 };

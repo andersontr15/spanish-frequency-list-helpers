@@ -1,14 +1,9 @@
-const { fuzzyMatch, getTopNWords } = require('../index');
+const { fuzzyMatch, getTopNWords, getFrequencyOfWord } = require('../index');
 
 console.log(
-  fuzzyMatch({
-    query: 'zascandil',
-  }),
-);
+  getFrequencyOfWord('bambolear')
+)
 
 console.log(
-  getTopNWords({
-    from: 100,
-    to: 500,
-  }),
-);
+  getFrequencyOfWord('menospreciar')
+)
